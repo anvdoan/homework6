@@ -20,5 +20,6 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector('#volumeSlider').addEventListener('change', function() {
 	console.log(this)
+	console.log(this.value)
 
 });
