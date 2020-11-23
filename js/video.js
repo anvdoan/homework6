@@ -64,10 +64,6 @@ document.querySelector('#faster').addEventListener('click', function() {
 
 });
 
-document.querySelector('#faster').addEventListener('click', function() {
-	console.log('Speed Up')
-
-});
 
 document.querySelector('#old').addEventListener('click', function() {
 	console.log('Old Time');
