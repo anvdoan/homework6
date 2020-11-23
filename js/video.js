@@ -39,8 +39,32 @@ document.querySelector('#mute').addEventListener('click', function() {
 	}
 });
 
-document.querySelector('#volumeSlider').addEventListener('change', function() {
-	console.log(this)
-	console.log(this.value)
+document.querySelector('#skip').addEventListener('click', function() {
+	console.log('Skip ahead')
+
+});
+
+document.querySelector('#slower').addEventListener('click', function() {
+	console.log('Slow Down')
+
+});
+
+document.querySelector('#faster').addEventListener('click', function() {
+	console.log('Speed Up')
+
+});
+
+document.querySelector('#faster').addEventListener('click', function() {
+	console.log('Speed Up')
+
+});
+
+document.querySelector('#old').addEventListener('click', function() {
+	console.log('Old Time')
+
+});
+
+document.querySelector('#original').addEventListener('click', function() {
+	console.log('Original')
 
 });
