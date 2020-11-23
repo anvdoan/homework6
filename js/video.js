@@ -67,7 +67,7 @@ document.querySelector('#old').addEventListener('click', function() {
 
 document.querySelector('#original').addEventListener('click', function() {
 	console.log('Original');
-	if document.getElementById('myVideo').classList.contains('oldTime'){
+	if (document.getElementById('myVideo').classList.contains('oldTime')){
 		document.getElementById('myVideo').classList.remove('oldTime');
 	}
 
