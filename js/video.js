@@ -21,6 +21,7 @@ document.querySelector("#pause").addEventListener("click", function() {
 document.querySelector('#volumeSlider').addEventListener('change', function() {
 	console.log(this)
 	console.log(this.value)
+	video.volume = (this.value) / 100
 
 });
 
@@ -36,6 +37,10 @@ document.querySelector('#mute').addEventListener('click', function() {
 		mutebutton = 'Mute';
 		console.log('Unmuted Video');
 	}
+});
 
+document.querySelector('#volumeSlider').addEventListener('change', function() {
+	console.log(this)
+	console.log(this.value)
 
 });
