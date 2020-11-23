@@ -23,3 +23,19 @@ document.querySelector('#volumeSlider').addEventListener('change', function() {
 	console.log(this.value)
 
 });
+
+document.querySelector('#mute').addEventListener('click', function() {
+	if(video.muted == false){
+		video.muted = true;
+		let mutebutton = document.querySelector('#mute').innerHTML = 'Unmute';
+		console.log('Muted Video');
+	}
+
+	else{
+		video.muted = false;
+		mutebutton = 'Mute';
+		console.log('Unmuted Video');
+	}
+
+
+});
