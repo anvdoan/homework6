@@ -60,11 +60,15 @@ document.querySelector('#faster').addEventListener('click', function() {
 });
 
 document.querySelector('#old').addEventListener('click', function() {
-	console.log('Old Time')
+	console.log('Old Time');
+	document.getElementById('myVideo').classList.add('oldTime');
 
 });
 
 document.querySelector('#original').addEventListener('click', function() {
-	console.log('Original')
+	console.log('Original');
+	if document.getElementById('myVideo').classList.contains('oldTime'){
+		document.getElementById('myVideo').classList.remove('oldTime');
+	}
 
 });
