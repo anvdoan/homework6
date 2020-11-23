@@ -50,17 +50,21 @@ document.querySelector('#skip').addEventListener('click', function() {
 	}
 	console.log(video.currentTime);
 	video.play();
-}
 
 });
 
 document.querySelector('#slower').addEventListener('click', function() {
-	console.log('Slow Down')
+	console.log('Slow Down');
+	let slowSpeed = video.playbackRate - 0.1;
+	video.playbackRate = slowSpeed;
+	console.log(video.playbackRate);
 
 });
 
 document.querySelector('#faster').addEventListener('click', function() {
-	console.log('Speed Up')
+	console.log('Speed Up');
+	video.playbackRate = video.playbackRate + 0.1;
+	console.log(video.playbackRate);
 
 });
 
