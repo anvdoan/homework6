@@ -24,7 +24,7 @@ document.querySelector('#volumeSlider').addEventListener('change', function() {
 
 });
 
-document.querySelector('#mute').addEventListener('click', function()){
+document.querySelector('#mute').addEventListener('click', function(){
 	if (video.muted == false){
 		video.muted = true;
 		let button= document.querySelector('#mute').innerHTML = 'Unmute';
